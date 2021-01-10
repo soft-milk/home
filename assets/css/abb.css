@@ -1,0 +1,502 @@
+body {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #252423;
+
+}
+
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* контейнер */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* интро */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/intro.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: .5;
+
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    color: #A2A09F;
+    font-size: 19px;
+    font-weight: 40;
+    font-family: 'Dosis', sans-serif;
+
+
+}
+
+.intro__title:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #af9d92;
+    margin: 25px auto 0;
+
+}
+
+.intro__suptitle {
+    font-size: 33px;
+    color: #af9d92;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+/* Header */
+
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    /*text-transform: uppercase;*/
+    font-size: 18px;
+    font-weight: 200;
+    color: #373535;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+.header__logo:after {
+    display: block;
+    border-top: 1px solid #252423;
+    content: '';
+    width: 30px;
+    margin: 0 auto;
+    height: 10px;
+
+
+}
+
+
+/* Nav */
+.nav {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    position: relative;
+    color: #373535;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+    /* display: none; */
+    background-color: #373535;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+
+.nav__link:hover {
+    color: #7f5f42;
+}
+
+.nav__link active:before {
+    color: #5d3b36;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #FFFFFF;
+    padding: 10px 15px;
+    color: #533926;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 1s linear, color 1s linear;
+}
+
+.btn:hover {
+    background-color: #F6F4F2;
+    color: #373734;
+}
+
+/* Slider */
+
+.advantages {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.advantages__item {
+    width: 15%;
+    padding: 15px 0;
+    opacity: .7;
+    font-size: 18px;
+    color: #373535;
+    text-transform: uppercase;
+    position: relative;
+
+
+}
+
+.advantages__item:before {
+    border-top: 1px solid #252423;
+    display: inline-block;
+    content: '';
+    width: 10px;
+    margin: 0px auto;
+    height: 8px;
+    border-bottom: 1px solid #252423;
+    border-right: 1px solid #252423;
+    border-left: 1px solid #252423;
+
+}
+
+.advantages__num {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+
+/*Section*/
+
+.section {
+    padding: 80px 0;
+
+
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+
+}
+
+.section__suptitle {
+    font-size: 20px;
+    color: #5d3b36;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.section__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #373535;
+    text-transform: uppercase;
+
+}
+
+.section__title:after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: .5px;
+    margin: 20px auto 20px;
+    background-color: #5d3b36;
+}
+
+.section__text {
+    font-size: 20px;
+    color: #373734;
+}
+
+
+/* Section Devices*/
+
+.section--devices {
+    padding-bottom: 0;
+
+
+    background: url("../images/dev_bac.jpg") center, no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-transform: none;
+
+}
+
+
+/* About*/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    width: 380px;
+
+}
+
+.about__item:hover .about__img img {
+    transform: translate3d(-8px, -8px, -0);
+}
+
+
+.about__item:hover .about__img img {
+    opacity: .7;
+}
+
+
+.about__img {
+    background: linear-gradient(to bottom, #b39c89, #997d64);
+    /*color: #5d3b36;*/
+    transition: transform .2s linear;
+}
+
+.about__img img {
+    transition: opacity .3s linear;
+    display: block;
+}
+
+.about__img img {
+    width: 100%;
+    height: max-content;
+}
+
+
+/*section catalogue*/
+
+.section_catalogue {
+    font-size: 10px;
+    font-weight: 700;
+    color: #373535;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 1.6;
+
+}
+
+.section__catalogue:after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: .5px;
+    margin: 20px auto 20px;
+    background-color: #5d3b36;
+}
+
+
+/* Rooms*/
+
+.room {
+    display: flex;
+}
+
+.room__item {
+    flex: 1 1 0;
+    border-left: 5px solid #ffffff;
+    text-align: center;
+    color: #4a433e;
+    padding: 70px 25px;
+
+
+}
+
+.room__item:first-child {
+    border-left: none;
+}
+
+.room__text {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.room__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.rooms {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Room link* */
+
+.room__text a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    position: relative;
+    color: #373535;
+    text-decoration: none;
+    transition: color .1s linear;
+    text-transform: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+.room__text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+    /* display: none; */
+    background-color: #373535;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.room__text a:hover:after,
+.room__text a.active:after {
+    opacity: 1;
+}
+
+.room__text a:hover {
+    color: #7f5f42;
+}
+
+.room__text a active:before {
+    color: #5d3b36;
+}
+
+.room {
+    background-color: #e6ddd6;
+}
+
+.catalogue {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #b39c89;
+    padding: 10px 15px;
+    color: #ccbcaf;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .5s linear, color 1s linear;
+    cursor: pointer;
+    text-align: center;
+    line-height: .5;
+
+    text-transform: capitalize;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.catalogue :hover {
+    background-color: #F6F4F2;
+    color: #b39c89;
+}
+
+.services_icon:before {
+    content: "\f0c9";
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+
+.services_icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Devices*/
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.devices__Item {
+    display: block;
+    border: 6px solid #e6ddd6;
+    border-radius: 10px;
+}
+
+.devices__Item--iphone {
+    position: absolute;
+    bottom: -40px;
+    right: 300px;
+    z-index: 1;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section--devices {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 25px 0 15px 0;
+}
